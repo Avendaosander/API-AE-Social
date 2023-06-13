@@ -1,0 +1,36 @@
+{
+  "name": "server-graphql",
+  "version": "1.0.0",
+  "description": "API con GraphQL en servidor Apollo/Server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avendaosander/API-AE-Social.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "Apollo/Server",
+    "Tweets",
+    "API"
+  ],
+  "author": "Alexander Avendaño, Eutimio Briceño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avendaosander/API-AE-Social/issues"
+  },
+  "homepage": "https://github.com/Avendaosander/API-AE-Social#readme",
+  "dependencies": {
+    "@apollo/server": "^4.7.3",
+    "dotenv": "^16.1.4",
+    "graphql": "^16.6.0",
+    "mongoose": "^7.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
