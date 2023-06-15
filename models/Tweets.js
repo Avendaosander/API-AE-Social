@@ -17,6 +17,10 @@ const tweetsSchema = new Schema({
    fav: {
       type: Boolean,
       default: false
+   },
+   tweetfav:{
+      type: Array,
+      default:[]
    }
 });
 
