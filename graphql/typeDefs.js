@@ -9,7 +9,6 @@ export const typeDefs = `#graphql
       createTweet(username: String, message: String): Tweet
       updateTweet(_id: ID!, like: Boolean, fav: Boolean): Tweet
       deleteTweet(_id: ID!): Tweet
-      favTweet(_id: ID!): Tweet
    }
    type Tweet {
       _id: ID
