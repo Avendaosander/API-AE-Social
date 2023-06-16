@@ -2,6 +2,7 @@
 export const typeDefs = `#graphql
    type Query {
       tweets: [Tweet]
+      tweetsFav:[Tweet]
    }
 
    type Mutation {
@@ -9,7 +10,6 @@ export const typeDefs = `#graphql
       updateTweet(_id: ID!, like: Boolean, fav: Boolean): Tweet
       deleteTweet(_id: ID!): Tweet
    }
-
    type Tweet {
       _id: ID
       username: String

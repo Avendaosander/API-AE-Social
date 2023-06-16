@@ -2,7 +2,8 @@ import Tweets from '../models/Tweets.js'
 
 export const resolvers = {
    Query: {
-      tweets: async () => await Tweets.find().lean()
+      tweets: async () => await Tweets.find().lean(),
+      tweetsFav:async()=> await Tweets.find({fav:{$in:true}}).lean(),
    },
    Mutation: {
       createTweet: async (_, {username, message}) => {
@@ -22,6 +23,6 @@ export const resolvers = {
          const deletedTweet = await Tweets.findByIdAndDelete(_id).lean()
          if (!deletedTweet) throw new Error('Tweet not found')
          return deletedTweet
-      }
+      },
    }
 };
